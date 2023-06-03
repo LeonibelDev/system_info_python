@@ -14,7 +14,7 @@ The PC System Information Retrieval project is a Python program designed to gath
 ## Installation and Usage
 1. Clone the repository to your local machine.
 2. Install the required dependencies listed in the `requirements.txt` file.
-3. Run the `system_info.py` script using Python.
+3. Run the `src/app.py` script using Python.
 4. The program will retrieve the system information and display it in the console.
 
 ## Future Enhancements
