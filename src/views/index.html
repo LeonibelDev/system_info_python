@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Info 💻</title>
+
+    <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
+    <link rel="stylesheet" href="https://bootswatch.com/5/litera/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="title">information about you pc</p>
+            </div>
+        </div>
+
+        <div class="card-columns">
+            {% for key, value in data.items() %}
+            <div class="card my-2">
+                <div class="card-body">
+                    <h6 class="text-muted">{{key}}</h6>
+                    <h1>{{value}}</h1>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+
+    <script>
+        setTimeout(function () {
+            location.reload();
+        }, 10000); // 10 seconds
+    </script>
+</body>
+
+<style>
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    .title {
+        font-size: 250%;
+        font-weight: 900;
+        font-family: "Roboto";
+        text-transform: uppercase;
+    }
+
+    .card {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        border: none;
+    }
+</style>
+
+</html>
